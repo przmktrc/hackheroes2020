@@ -1,0 +1,8 @@
+[
+  {
+    "format" : {
+      "format" : "yyy/MM/dd",
+      "delimiter" : "/"
+    }
+  }
+]

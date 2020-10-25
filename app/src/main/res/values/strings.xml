@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">PlanFit</string>
+    
+    <string name="main_page_title">Strona główna</string>
+    <string name="calendar_title">Kalendarz</string>
+    <string name="statistics_title">Statystyki</string>
+    <string name="BMI_calc_title">Kalkulator BMI</string>
+    <string name="settings_title">Ustawienia</string>
+
+    <string name="main_page_welcome">Witaj w PlanFit!</string>
+    <string name="main_page_introduction">Aby zacząć:\n\u279B przejdź do widoku <i>Kalendarza</i>\n\u279B przejdź do zakładki <i>Ćwiczenia</i> lub <i>Posiłki</i>\n\u279B kliknij ikonkę z białym znakiem \"+\"\n\u279B wybierz ćwiczenie/posiłek z listy lub stwórz własny(-e)</string>
+    <string name="main_page_quick_start">Szybki start:</string>
+    <string name="main_page_exercise_begin">Rozpocznij ćwiczenie</string>
+    <string name="main_page_meal_begin">Przygotuj posiłek</string>
+
+    <string name="calendar_day_list">Aktywności w tym dniu</string>
+    
+    <string name="new_activity_exercise_title">Wybierz ćwiczenie</string>
+    <string name="new_activity_meal_title">Wybierz posiłek</string>
+    
+    <string name="do_activity_exercise_title">Wykonaj ćwiczenie</string>
+    <string name="do_activity_meal_title">Przyrządź posiłek</string>
+    <string name="do_activity_bttn_add">Dodaj do kalendarza</string>
+    <string name="do_activity_editText_name_hint">Nazwa</string>
+    <string name="do_activity_editText_description_hint">Wyjaśnienie</string>
+    <string name="do_activity_editText_date_hint">Data wykonania</string>
+    <string name="do_activity_add_successful">Dodano</string>
+
+    <string name="edit_activity_bttn_save">Zapisz</string>
+    <string name="edit_activity_editText_name_hint">Nazwa</string>
+    <string name="edit_activity_editText_description_hint">Wyjaśnienie</string>
+    <string name="edit_activity_save_successful">Zapisano</string>
+    
+    <string name="calendar_tabItem_main">Główny</string>
+    <string name="calendar_tabItem_exercise">Ćwiczenia</string>
+    <string name="calendar_tabItem_meals">Posiłki</string>
+    
+    <string name="bmi_calc_button">Oblicz BMI</string>
+    <string name="BMI_calc_editText_mass_hint">Masa ciała (kg)</string>
+    <string name="BMI_calc_editText_height_hint">Wzrost (cm)</string>
+    <string name="bmi_calc_missing_data">Wpisz dane</string>
+    <string name="bmi_calc_result">BMI wynosi: %1$.2f</string>
+    <string name="bmi_calc_result_state">BMI jest %1$s</string>
+    <string name="bmi_result_OK">w normie</string>
+    <string name="bmi_result_too_low_1">zbyt niskie (niedowaga)</string>
+    <string name="bmi_result_too_low_2">zbyt niskie (wychudzenie)</string>
+    <string name="bmi_result_too_low_3">zbyt niskie (wygłodzenie)</string>
+    <string name="bmi_result_too_high_1">zbyt wysokie (nadwaga)</string>
+    <string name="bmi_result_too_high_2">zbyt wysokie (otyłość I stopnia)</string>
+    <string name="bmi_result_too_high_3">zbyt wysokie (otyłość II stopnia)</string>
+    <string name="bmi_result_too_high_4">zbyt wysokie (skrajna otyłość)</string>
+    
+    <string name="statistics_chart_no_data">Brak aktywności</string>
+    <string name="statistics_line_data_exercise_title">Ćwiczenia</string>
+    <string name="statistics_line_data_meals_title">Posiłki</string>
+    <string name="statistics_today_bttn">Dzisiaj</string>
+    <string name="statisics_this_month_exercise">Ćwiczeń w tym miesiącu</string>
+    <string name="statisics_this_month_meals">Posiłków w tym miesiącu</string>
+    <string name="statisics_total_exercise">Ćwiczeń łącznie</string>
+    <string name="statisics_total_meals">Posiłków łącznie</string>
+
+    <string name="settings_date_format_textView">Format daty:</string>
+    <string name="settings_delimiter_textView">Łącznik daty:</string>
+    <string name="settings_ex_recipes_textView">Ćwiczenia:</string>
+    <string name="settings_m_recipes_textView">Przepisy:</string>
+    <string name="settings_export">Eksportuj</string>
+    <string name="settings_clear">Wyczyść</string>
+    <string name="settings_restore">Przywróć domyślne</string>
+    <string name="settings_export_successful">Wyeksportowano pomyślnie do\n%1$s</string>
+    <string name="settings_export_unsuccessful">Problem z wyeksportowaniem.\n(Brak uprawnień?)</string>
+    <string name="settings_restore_dialog">Czy na pewno chcesz przywrócić domyślne ćwiczenia/przepisy?</string>
+    <string name="settings_restore_successful">Przywrócono ustawienia domyślne</string>
+    <string name="settings_restore_unsuccessful">Nie udało się przywrócić ustawień domyślnych</string>
+    <string name="settings_ex_calendar_textView">Kalendarz ćwiczeń:</string>
+    <string name="settings_m_calendar_textView">Kalendarz posiłków:</string>
+    <string name="settings_clear_dialog">Czy na pewno chcesz wyczyścić dany kalendarz?</string>
+    <string name="settings_clear_successful">Pomyślnie wyczyszczono dany kalendarz</string>
+    <string name="settings_settings_textView">Ustawienia:</string>
+    <string name="settings_restore_settings_dialog">Czy na pewno chcesz przywrócić ustawienia domyślne?</string>
+    
+    <string name="WORD_OK">OK</string>
+    <string name="WORD_YES">Tak</string>
+    <string name="WORD_NO">Nie</string>
+    <string name="WORD_DELETE">Usuń</string>
+    <string name="WORD_DELETE_DIALOG">Czy na pewno chcesz usunąć element?</string>
+
+    <string name="WBL">Zostanie załadowany</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+</resources>

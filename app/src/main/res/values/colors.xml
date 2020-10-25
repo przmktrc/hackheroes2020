@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    
+    <color name="color_today">#3289a8</color>
+    <color name="color_in_month">#000000</color>
+    <color name="color_out_month">#808080</color>
+    <color name="color_exercise">#c44100</color>
+    <color name="color_exercise_out_month">#c79177</color>
+    <color name="color_meal">#04C200</color>
+    <color name="color_meal_out_month">#76db74</color>
+    <color name="color_both">#00b5a6</color>
+    <color name="color_both_out_month">#89d6d0</color>
+</resources>

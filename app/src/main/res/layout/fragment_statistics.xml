@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_gradient" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.Fragment_statistics"
+        android:paddingBottom="100dp">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/statistics_chart"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statistics_textView_month">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <TextView
+            android:id="@+id/statistics_textView_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/WBL"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/statistics_textView_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/WBL"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statistics_textView_year" />
+
+        <ImageView
+            android:id="@+id/statistics_left_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            android:src="@drawable/ic_arrow_left"
+            android:tint="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/statistics_today_bttn"
+            app:layout_constraintEnd_toStartOf="@+id/statistics_textView_month"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/statistics_textView_month"
+            android:contentDescription="prev_button"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/statistics_right_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            android:src="@drawable/ic_arrow_right"
+            android:tint="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/statistics_today_bttn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/statistics_textView_month"
+            app:layout_constraintTop_toTopOf="@+id/statistics_textView_month"
+            android:contentDescription="next_bttn"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/statistics_today_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics_today_bttn"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/statistics_textView_month"
+            app:layout_constraintStart_toStartOf="@+id/statistics_textView_month"
+            app:layout_constraintTop_toBottomOf="@+id/statistics_textView_month" />
+
+        <TextView
+            android:id="@+id/statistics_textView_this_month_exercise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/statisics_this_month_exercise"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statistics_chart" />
+
+        <TextView
+            android:id="@+id/statistics_textView_this_month_meals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/statisics_this_month_meals"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statistics_textView_this_month_exercise" />
+
+        <TextView
+            android:id="@+id/statistics_textView_total_exercise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/statisics_total_exercise"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statistics_textView_this_month_meals" />
+
+        <TextView
+            android:id="@+id/statistics_textView_total_meals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/statisics_total_meals"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statistics_textView_total_exercise" />
+
+        <TextView
+            android:id="@+id/statistics_textView_this_month_exercise_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/WBL"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/statistics_textView_this_month_exercise" />
+
+        <TextView
+            android:id="@+id/statistics_textView_this_month_meals_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/WBL"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/statistics_textView_this_month_meals" />
+
+        <TextView
+            android:id="@+id/statistics_textView_total_exercise_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/WBL"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/statistics_textView_total_exercise" />
+
+        <TextView
+            android:id="@+id/statistics_textView_total_meals_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/WBL"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/statistics_textView_total_meals" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</ScrollView>

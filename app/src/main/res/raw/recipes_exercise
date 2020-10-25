@@ -1,0 +1,14 @@
+[
+	{
+		"name" : "Ogólny workout",
+		"description" : "Czas pomiędzy zestawem: 90s\\n\\nĆwiczenia:\\n - Deska - 35s, 15s przerwy, 4 powtórzenia\\n - Przysiady z wyskokiem - 25s, 15s przerwy, 4 powtórzenia\\n - Pompki - 20s, 15s przerwy, 4 powtórzenia\\n - Bieg w miejscu - 30s, 15s przerwy, 4 powtórzenia\\n - Brzuszki - 20s, 15s przerwy, 4 powtórzenia\\n - Wejścia na krzesło - 30s, 15s przerwy, 4 powtórzenia"
+	},
+	{
+		"name" : "Workout 2",
+		"description" : "Jak najmniej odpoczynku pomiędzy ćwiczeniami.\\n\\n3-4 zestawy, 2 min pomiędzy\\n\\n - Przysiady - 20 powtórzeń\\n - Nachylone pompki - 20 powtórzeń\\n - Pchnięcia biodrami - 20 powtórzeń (*Brett Contreras*)\\n - Wypady - 20 powtórzeń (10 na nogę)\\n - Pompki - 20 powtórzeń\\n - Brzuszki - 25 powtórzeń"
+	},
+	{
+		"name" : "Workout 3",
+		"description" : "3 zestawy. Czas pomiędzy ćwiczeniami i pomiędzy zestawami: 1-3 min.\\n\\n - Przysiady - 20 – 30 powtórzeń\\n - Pompki - 20 – 30 powtórzeń\\n - Wypady - 20 – 30 powtórzeń\\n - \"Superman\" - 20 – 30 powtórzeń\\n - Brzuszki - 20 – 30 powtórzeń\\n - Deska	- 30 - 60 sekund"
+	}
+]

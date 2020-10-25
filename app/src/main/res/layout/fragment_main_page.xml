@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".fragments.Fragment_main_page">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp">
+
+        <TextView
+            android:id="@+id/main_page_intro_textView_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/main_page_introduction"
+            android:textColor="#101010"
+            android:textSize="27sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/main_page_welcome_textView"
+            app:layout_constraintTop_toBottomOf="@+id/main_page_welcome_textView" />
+
+        <TextView
+            android:id="@+id/main_page_quick_start_textView_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/main_page_quick_start"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@+id/main_page_intro_textView_1"
+            app:layout_constraintTop_toBottomOf="@+id/main_page_intro_textView_1" />
+
+        <Button
+            android:id="@+id/main_page_exercise_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/main_page_exercise_begin"
+            app:layout_constraintStart_toStartOf="@+id/main_page_quick_start_textView_2"
+            app:layout_constraintTop_toBottomOf="@+id/main_page_quick_start_textView_2" />
+
+        <Button
+            android:id="@+id/main_page_meal_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/main_page_meal_begin"
+            app:layout_constraintStart_toStartOf="@+id/main_page_exercise_begin"
+            app:layout_constraintTop_toBottomOf="@+id/main_page_exercise_begin" />
+
+        <TextView
+            android:id="@+id/main_page_welcome_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/main_page_welcome"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

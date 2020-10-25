@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Ekran startowy"
+        android:id="@+id/item_main_page" />
+    <item
+        android:title="Kalendarz"
+        android:id="@+id/item_calendar" />
+    <item
+        android:title="Statystyki"
+        android:id="@+id/item_statistics" />
+    <item
+        android:title="Kalkulator BMI"
+        android:id="@+id/item_bmi_calc" />
+    <item
+        android:title="Ustawienia"
+        android:id="@+id/item_settings" />
+</menu>

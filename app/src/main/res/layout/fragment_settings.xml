@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".fragments.Fragment_settings">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp"
+        android:id="@+id/settings_layout" >
+
+        <RadioGroup
+            android:id="@+id/settings_date_format"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/settings_date_format_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/settings_date_format_textView"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/settings_date_format_radioButton_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/WBL"
+                android:textColor="#545454"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/settings_date_format_radioButton_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/WBL"
+                android:textColor="#545454"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/settings_date_format_radioButton_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/WBL"
+                android:textColor="#545454"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/settings_delimiter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_date_format"
+            app:layout_constraintTop_toBottomOf="@+id/settings_date_format">
+
+            <TextView
+                android:id="@+id/settings_delimiter_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/settings_delimiter_textView"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/settings_delimiter_radioButton_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="/"
+                android:textColor="#545454"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/settings_delimiter_radioButton_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="."
+                android:textColor="#545454"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/settings_ex_recipes_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/settings_ex_recipes_textView"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/settings_delimiter"
+            app:layout_constraintTop_toBottomOf="@+id/settings_delimiter" />
+
+        <Button
+            android:id="@+id/settings_ex_recipes_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_export"
+            app:layout_constraintStart_toStartOf="@+id/settings_ex_recipes_textView"
+            app:layout_constraintTop_toBottomOf="@+id/settings_ex_recipes_textView" />
+
+        <Button
+            android:id="@+id/settings_ex_recipes_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/settings_restore"
+            app:layout_constraintStart_toEndOf="@+id/settings_ex_recipes_button_1"
+            app:layout_constraintTop_toTopOf="@+id/settings_ex_recipes_button_1" />
+
+        <TextView
+            android:id="@+id/settings_m_recipes_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/settings_m_recipes_textView"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/settings_ex_recipes_textView"
+            app:layout_constraintTop_toBottomOf="@+id/settings_ex_recipes_button_1" />
+
+        <Button
+            android:id="@+id/settings_m_recipes_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_export"
+            app:layout_constraintStart_toStartOf="@+id/settings_m_recipes_textView"
+            app:layout_constraintTop_toBottomOf="@+id/settings_m_recipes_textView" />
+
+        <Button
+            android:id="@+id/settings_m_recipes_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/settings_restore"
+            app:layout_constraintStart_toEndOf="@+id/settings_m_recipes_button_1"
+            app:layout_constraintTop_toTopOf="@+id/settings_m_recipes_button_1" />
+
+        <TextView
+            android:id="@+id/settings_ex_calendar_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/settings_ex_calendar_textView"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/settings_m_recipes_textView"
+            app:layout_constraintTop_toBottomOf="@+id/settings_m_recipes_button_1" />
+
+        <Button
+            android:id="@+id/settings_ex_calendar_bttn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_export"
+            app:layout_constraintStart_toStartOf="@+id/settings_m_recipes_textView"
+            app:layout_constraintTop_toBottomOf="@+id/settings_ex_calendar_textView" />
+
+        <Button
+            android:id="@+id/settings_ex_calendar_bttn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/settings_clear"
+            app:layout_constraintStart_toEndOf="@+id/settings_ex_calendar_bttn_1"
+            app:layout_constraintTop_toTopOf="@+id/settings_ex_calendar_bttn_1" />
+
+        <TextView
+            android:id="@+id/settings_m_calendar_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/settings_m_calendar_textView"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/settings_ex_calendar_textView"
+            app:layout_constraintTop_toBottomOf="@+id/settings_ex_calendar_bttn_1" />
+
+        <Button
+            android:id="@+id/settings_m_calendar_bttn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_export"
+            app:layout_constraintStart_toEndOf="@+id/settings_m_calendar_textView"
+            app:layout_constraintStart_toStartOf="@+id/settings_m_calendar_textView"
+            app:layout_constraintTop_toBottomOf="@+id/settings_m_calendar_textView" />
+
+        <Button
+            android:id="@+id/settings_m_calendar_bttn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/settings_clear"
+            app:layout_constraintStart_toEndOf="@+id/settings_m_calendar_bttn_1"
+            app:layout_constraintTop_toTopOf="@+id/settings_m_calendar_bttn_1" />
+
+        <TextView
+            android:id="@+id/settings_settings_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/settings_settings_textView"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/settings_m_calendar_textView"
+            app:layout_constraintTop_toBottomOf="@+id/settings_m_calendar_bttn_1" />
+        
+        <Button
+            android:id="@+id/settings_settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_restore"
+            app:layout_constraintStart_toStartOf="@+id/settings_settings_textView"
+            app:layout_constraintTop_toBottomOf="@+id/settings_settings_textView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
