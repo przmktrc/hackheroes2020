@@ -3,3 +3,5 @@
 Repozytorium używane do Hackathonu w 2020 roku.
 
 http://www.hackheroes.pl/index.html
+
+Plik .apk jest w katalogu app/release/
